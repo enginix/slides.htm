@@ -6,16 +6,19 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
-    <link href="[% css_location %]" rel="stylesheet" type="text/css" />
-    <script src="[% jquery_path %]"></script>
-    <script src="[% javascript_runtime %]"></script>
+    <link href="css/sporx.css" rel="stylesheet" type="text/css" />
+    <script src="lib/jquery.js"></script>
+    <script src="lib/sporx.js"></script>
 
   </head>
   <body>
+    <header role="header" class="logo">
+    </header>
       <div>
-    <div id="canvasToolbar">
+    <div id="toolbar">
 
       <!--div class="fr">
         <button onclick="Sporx.addPage()">New Page</button>
@@ -32,16 +35,25 @@
         <button onclick="sporx.lastSlide()">&gt;&gt;|</button>
         <input type="text" id="current_page" size="4" onkeypress="if (this.value) sporx.showSlide(parseInt(this.value)-1);" />
         /
-        <span id="max_page"></span>
+        <span id="max-page"></span>
       </div>
     </div>
     </div>
     <div id="canvas"><div id="content"></div></div>
-    <iframe style="display:none;" id="dataLoader"></iframe>
+    <!-- <iframe style="display:none;" id="dataLoader"></iframe>
     <div id="edit">
       <textarea id="textField"></textarea>
-    </div>
-    <textarea id="builtinCode" style="width:1px;position:absolute;left:-5px;overflow:hidden;">
+    </div> -->
+    <div id="progress"><span></span></div>
+    <aside class="controls">
+      <button class="previous" onclick="sporx.prevSlide()">
+        <div class="controls-arrow"></div>
+      </button>
+      <button class="next" onclick="sporx.nextSlide()">
+        <div class="controls-arrow"></div>
+      </button>
+    </aside>
+    <textarea id="builtin-code" style="display: none;">
 [%- slides_content -%]
 </textarea>
   </body>
