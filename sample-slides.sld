@@ -77,7 +77,7 @@ X<☺> We've already made both
 Mozilla X<Gecko> and Apple X<WebKit> I<emit> VDOMs
 
 ----
-{{img src="images/gen-vdom.png"}}
+{{img src="images/gen-vdom.png" width="100" height="100"}}
 
 ----
 
@@ -133,7 +133,7 @@ as good as those in JavaScript.
         V<$child>->getElmenetsByTagName(X<"A">);
 
 ----
-{{img src="images/vdom-pm.png"}}
+{{img src="images/vdom-pm.png" width="200" height="500" }}
 ----
 {{img src="images/vdom-pm2.png"}}
 ----
