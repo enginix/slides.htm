@@ -30,7 +30,7 @@ body.dark-style {
 }
 #canvas {
   color: #191919;
-  font-family: "Consola", "微软雅黑", "Candara", "Georgia", "DejaVu Serif Condensed", "Arial", "Bitstream Vera Sans", "Verdana", "Apple LiGothic", "Arial Black", "Bitstream Vera Sans", sans-serif;
+  font-family: "Segoe UI Symbol", "Consola", "微软雅黑", "Candara", "Georgia", "DejaVu Serif Condensed", "Arial", "Bitstream Vera Sans", "Verdana", "Apple LiGothic", "Arial Black", "Bitstream Vera Sans", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,7 +253,7 @@ body.in-print #toolbar {
   font-weight: bold;
 }
 .pre-big {
-  font-family: "Consolas", "Courier New", "Anonymous", "Andale Mono", "Bitstream Vera Sans Mono", "微软雅黑", monospace;
+  font-family: "Segoe UI Symbol", "Consolas", "Courier New", "Anonymous", "Andale Mono", "Bitstream Vera Sans Mono", "微软雅黑", monospace;
   padding-bottom: 8px;
   /* font-weight: bold; */
   /* margin-left: 10%; */
