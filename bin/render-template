@@ -9,6 +9,7 @@ my ($slides_path, $output_path) = @ARGV;
 
 my $config = YAML::LoadFile('config.yaml');
 my $main_template = $config->{main_template} || 'sporx.html';
+my $template_path = $config->{template_path} || 'template/';
 
 open SLIDES, $slides_path
     or die "Can't open $slides_path for input:\n$!";
@@ -25,7 +26,7 @@ my $data = {
 
 my $result;
 
-my $t = Template->new( { INCLUDE_PATH => ['template/'] });
+my $t = Template->new( { INCLUDE_PATH => [$template_path] });
 $t->process($main_template, $data, \$result) or die $t->error;
 
 open OUTPUT, "> $output_path"
